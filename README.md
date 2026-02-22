@@ -9,13 +9,13 @@ Build:
 
 - execute .sh:
   ```sh
-  sh build.sh
+  sh build.sh / bash build.sh
   ```
-
-- or
-
+  
+  if you are skeptical, you can analyze .sh for yourself or compile yourself using this command on your terminal:
+  
   ```sh
-  bash build.sh
+  g++ main.cpp -o macfetch -std=c++23 -I./include/ -L./lib -lhwinfo_mainboard -lhwinfo_cpu -lhwinfo_ram -lhwinfo_disk -lhwinfo_gpu -lhwinfo_network -lhwinfo_os -lhwinfo_battery
   ```
 ### and done!
 
